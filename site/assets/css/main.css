@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700");
+
+html{
+	width: 100%;
+	height:100%;
+	background: #396afc;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body {
+	font-family: "Raleway", Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+}
+
+body h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 2em;
+}
+
+div.main-content {
+	display:flex;
+	justify-content: center;
+	flex-direction:column;
+	max-width:66%;
+}
+
+div.main-content span.border-span {
+	color:#ffffff;
+	border: .2rem solid;
+	width:inherit;
+}
+
+div.main-content div.section-title, div.main-content div.section-content {
+	display: flex;
+	justify-content: center;
+	margin: .25rem;
+	width:inherit;
+}
+
+div.main-content div.section-content h1, div.main-content div.section-title h1 {
+	color:#ffffff;
+	margin: 0.5rem;
+	word-wrap: break-word;
+}
+
+div.main-content div.section-title h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 2em;
+}
+
+div.main-content div.section-content h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 2em;
+	width:inherit;
+}
+
+div.main-content div.section-content span.fa-stack{
+	margin: 1.5rem .5rem;
+	height: auto;
+	justify-content: space-evenly;
+}
+
+div.main-content div.section-content i.fas.fa-stack-1x{
+	color:#000000;
+}
+
+div.main-content div.section-content i.fas.fa-stack-2x {
+	color:#ffd900;
+}
