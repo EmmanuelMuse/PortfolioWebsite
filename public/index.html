@@ -28,11 +28,13 @@
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fas fa-hard-hat fa-stack-1x fa-spin"></i>
                     </span>
-                    <div class="projects-list" id="projects-list">
+                    <div class="my-projects" id="my-projects">
                         <ul>
-                            <li v-for="title in titles">
-                                {{ title.text }}
-                            </li>
+                            <project-item
+                                v-for="item in projectsList"
+                                v-bind:project="item"
+                                v-bind:key="item.title"
+                            ></project-item>
                         </ul>
                     </div>
                 </div>

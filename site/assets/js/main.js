@@ -1,11 +1,17 @@
-var projects = new Vue({
-    el: '#projects-list',
+Vue.component('project-item', {
+    props:['project'],
+    template: '<li>{{ project.title }}</li>'
+  })
+
+var projectList = new Vue({
+    el: '#my-projects',
     data: {
-      titles: [
-            { text: 'Staff & Resource Management Web Application' },
-            { text: 'Inventory Management System Web Application' },
-            { text: 'Automated ROI Calculator Web Application' },
-            { text: 'Atlanta Crime Data Visualization' }
+      projectsList: [
+            { title: 'Staff & Resource Management Web Application', desc:'' },
+            { title: 'Inventory Management System Web Application', desc:'' },
+            { title: 'Automated ROI Calculator Web Application', desc:'' },
+            { title: 'Atlanta Crime Data Visualization', desc:'' }
       ]
     }
   })
+
