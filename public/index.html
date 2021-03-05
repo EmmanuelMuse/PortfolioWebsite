@@ -12,23 +12,45 @@
 
     </head>
     <body>
-        <div class="main-content">
-            <div class="section-title">
-                <h1>Welcome to EmmanuelM.dev!</h1>
+        <header>
+            <h1>HEADER</h1>
+            <h3>Here you are, scroll down.</h3>
+        </header>
+        <main>
+            <div class="main-content">
+                <div class="landing-section-title">
+                    <h1>Welcome to EmmanuelM.dev!</h1>
+                </div>
+                <span class="border-span"></span>
+                <div class="landing-section-content">
+                    <h1>Website is currently under construction, please come back soon!</h1>
+                    <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-hard-hat fa-stack-1x fa-spin"></i>
+                    </span>
+                    <div class="projects-list" id="projects-list">
+                        <ul>
+                            <li v-for="title in titles">
+                                {{ title.text }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <span class="border-span"></span>
-            <div class="section-content">
-                <h1>Website is currently under construction, please come back soon!</h1>
-                <span class="fa-stack fa-2x">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-hard-hat fa-stack-1x fa-spin"></i>
-                </span>
-            </div>
-        </div>
+        </main>
+        <footer>
+            <p>And, the footer.</p>
+            <small>🕷 Wish you luck, <a href="https://www.linkedin.com/in/emmanuel109">Contact me!</a>.</small>
+        </footer>
+    </body>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/8.2.8/firebase-app.js"></script>
+    <!-- vue.js production version 2.6.12 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+    <script src="/site/assets/js/main.js"></script>
+
 </html>
